@@ -1,0 +1,13 @@
+Spring:
+    application:
+        name: eureka-server # Name of the application
+
+server:
+  port: 10010
+
+eureka:
+  client:
+    register-with-eureka: false # 是否将自己注册到Eureka Server，默认为true
+    fetch-registry: false # 是否从Eureka Server获取注册信息，默认为true
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka # URL of the Eureka Server

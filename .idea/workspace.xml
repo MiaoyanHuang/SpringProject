@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ca5104e-3d31-4323-bfdc-3793fd12679c" name="更改" comment="commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="c6a1c6b8-7382-4e9c-87fb-c69e06e05fbc" value="Green" />
+    </colors>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2SssY4wQuYqTevzcHEzHxbfz6WF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.UserService [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.BaseApplication.executor": "Run",
+    "Spring Boot.EurekaCenterApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication (1).executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "18",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/IDEAProjects/SpringProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "9de55c031c39f5693a3777edd744d95e",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEAProject\SpringProject\UserService" />
+      <recent name="E:\IDEAProject\SpringProject\EurekaCenter\target" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEAProjects\SpringProject\Base" />
+      <recent name="E:\IDEAProjects\SpringProject\Base\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration name="BaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Base" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.BaseApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EurekaCenter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.EurekaCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="UserService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootproject.UserServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="UserService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootproject.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.BaseApplication" />
+      <item itemvalue="Spring Boot.EurekaCenterApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.UserServiceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-3183f394aec4-38982a12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="0ca5104e-3d31-4323-bfdc-3793fd12679c" name="更改" comment="" />
+      <created>1689946668766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689946668766</updated>
+      <workItem from="1689946669814" duration="8941000" />
+      <workItem from="1690031725153" duration="623000" />
+      <workItem from="1690118681386" duration="6462000" />
+      <workItem from="1690277318273" duration="9417000" />
+      <workItem from="1690386119712" duration="5003000" />
+      <workItem from="1690391714337" duration="540000" />
+      <workItem from="1690422789467" duration="605000" />
+      <workItem from="1690447270129" duration="2506000" />
+      <workItem from="1690449787329" duration="228000" />
+      <workItem from="1690450254364" duration="8122000" />
+      <workItem from="1690532914017" duration="39000" />
+      <workItem from="1690894851198" duration="401000" />
+      <workItem from="1691085840644" duration="145000" />
+      <workItem from="1691086045181" duration="231000" />
+      <workItem from="1691087777417" duration="299000" />
+      <workItem from="1691088203786" duration="526000" />
+      <workItem from="1691093674537" duration="39000" />
+      <workItem from="1691137455388" duration="311000" />
+      <workItem from="1691397275359" duration="1375000" />
+      <workItem from="1691398910485" duration="5421000" />
+      <workItem from="1691477053484" duration="24000" />
+      <workItem from="1693244470258" duration="89000" />
+      <workItem from="1693249535555" duration="346000" />
+      <workItem from="1693271263227" duration="4000" />
+      <workItem from="1693463504759" duration="248000" />
+      <workItem from="1693586449627" duration="174000" />
+      <workItem from="1694780082397" duration="73000" />
+      <workItem from="1694780171994" duration="5000" />
+      <workItem from="1694780389842" duration="8000" />
+      <workItem from="1694841959063" duration="1007000" />
+      <workItem from="1694843898571" duration="36000" />
+      <workItem from="1694883494575" duration="55000" />
+      <workItem from="1701429407383" duration="43000" />
+      <workItem from="1701429465011" duration="490000" />
+      <workItem from="1702407131295" duration="79000" />
+      <workItem from="1702407217019" duration="193000" />
+      <workItem from="1702407425026" duration="156000" />
+      <workItem from="1702970595246" duration="114000" />
+      <workItem from="1703317560095" duration="2274000" />
+      <workItem from="1703350636973" duration="113000" />
+      <workItem from="1703425568270" duration="53000" />
+      <workItem from="1704193686910" duration="115000" />
+      <workItem from="1704355803125" duration="465000" />
+      <workItem from="1704614554779" duration="1344000" />
+      <workItem from="1706006672844" duration="2157000" />
+      <workItem from="1706169446571" duration="3024000" />
+      <workItem from="1706205792050" duration="979000" />
+      <workItem from="1706251995093" duration="2821000" />
+      <workItem from="1706280136254" duration="786000" />
+      <workItem from="1706280936237" duration="125000" />
+      <workItem from="1706281126112" duration="2000000" />
+      <workItem from="1707063210604" duration="2036000" />
+      <workItem from="1707065276771" duration="2110000" />
+      <workItem from="1707067402868" duration="7132000" />
+      <workItem from="1707074900253" duration="1871000" />
+      <workItem from="1707077172143" duration="51000" />
+      <workItem from="1707077231415" duration="605000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="25" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
