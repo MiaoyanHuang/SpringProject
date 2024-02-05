@@ -3,6 +3,7 @@ package com.example.springbootproject.controller;
 import com.example.springbootproject.entity.User;
 import com.example.springbootproject.service.impl.UserServiceImpl;
 import com.example.springbootproject.utils.R;
+import com.example.sys.utils.SHA256Encrypt;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Isolation;
@@ -25,7 +26,7 @@ public class UserController {
     //@GetMapping("/login/{username}/{password}")
     @GetMapping("/login/")
     String login(@Param("username") String username, @Param("password") String password){
-        User user = userService.login(username, password);
+        User user = userService.login(username, SHA256Encrypt.encrypt(password));
         if (user != null){
             System.out.println(user);
             return new R(true, user).toString();
@@ -38,7 +39,7 @@ public class UserController {
     @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT,
             readOnly = false, timeout = 99999, rollbackFor = Exception.class)
     String register(@Param("username") String username, @Param("password")String password){
-        User user = new User(username, password);
+        User user = new User(username, SHA256Encrypt.encrypt(password));
         boolean isRegistered = userService.register(user);
         System.out.println(isRegistered);
         return new R(isRegistered, user).toString();
