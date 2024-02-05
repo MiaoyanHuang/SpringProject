@@ -4,16 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ca5104e-3d31-4323-bfdc-3793fd12679c" name="更改" comment="commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Base/src/main/java/com/example/sys/utils/SHA256Encrypt.java" afterDir="false" />
+    <list default="true" id="0ca5104e-3d31-4323-bfdc-3793fd12679c" name="更改" comment="update encrypt algorithm">
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Base/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/src/main/java/com/example/BaseApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/src/main/java/com/example/sys/exception/BaseException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/src/main/java/com/example/sys/invocation/DynamicInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/invocation/DynamicInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/src/main/java/com/example/sys/utils/SHA256Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/utils/SHA256Encrypt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Base/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/WebApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/utils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/utils/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/test/java/com/example/springbootproject/UserDaoTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/UserDaoTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/test/java/com/example/springbootproject/UserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/WebApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService/src/test/java/com/example/springbootproject/UserServiceTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/UserServiceTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.UserDaoTestCase.selectUserById.executor": "Run",
     "Maven.UserService [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -56,15 +73,16 @@
     "Spring Boot.BaseApplication.executor": "Run",
     "Spring Boot.EurekaCenterApplication (1).executor": "Run",
     "Spring Boot.EurekaCenterApplication.executor": "Run",
-    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Debug",
     "Spring Boot.UserServiceApplication (1).executor": "Run",
     "Spring Boot.UserServiceApplication.executor": "Debug",
+    "Spring Boot.WebApplication.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/IDEAProjects/SpringProject",
+    "last_opened_file_path": "E:/IDEAProjects/SpringProject/UserService/src/main/java/com/example/springbootproject",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,12 +102,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEAProjects\SpringProject\UserService\src\main\java\com\example\springbootproject" />
       <recent name="E:\IDEAProject\SpringProject\UserService" />
       <recent name="E:\IDEAProject\SpringProject\EurekaCenter\target" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IDEAProjects\SpringProject\Base" />
       <recent name="E:\IDEAProjects\SpringProject\Base\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example" />
+      <recent name="com.example.springbootproject.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,10 +124,19 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaCenterApplication">
-    <configuration name="BaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Base" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.BaseApplication" />
+  <component name="RunManager" selected="Spring Boot.WebApplication">
+    <configuration name="UserDaoTestCase.selectUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springbootproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.springbootproject" />
+      <option name="MAIN_CLASS_NAME" value="com.example.springbootproject.UserDaoTestCase" />
+      <option name="METHOD_NAME" value="selectUserById" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,12 +161,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
-      <module name="UserService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootproject.UserServiceApplication" />
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hmy.webapp.WebApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.springbootproject.*" />
+          <option name="PATTERN" value="hmy.webapp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,23 +174,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="UserService" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.springbootproject.UserServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="JUnit.UserDaoTestCase.selectUserById" />
       <item itemvalue="Spring Boot.EurekaCenterApplication" />
-      <item itemvalue="Spring Boot.BaseApplication" />
-      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.WebApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UserServiceApplication" />
+        <item itemvalue="Spring Boot.WebApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="JUnit.UserDaoTestCase.selectUserById" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +260,9 @@
       <workItem from="1707074900253" duration="1871000" />
       <workItem from="1707077172143" duration="51000" />
       <workItem from="1707077231415" duration="1655000" />
-      <workItem from="1707128134536" duration="2195000" />
+      <workItem from="1707128134536" duration="7104000" />
+      <workItem from="1707135551785" duration="2352000" />
+      <workItem from="1707148469629" duration="6257000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -244,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707078218932</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update encrypt algorithm">
+      <option name="closed" value="true" />
+      <created>1707130522158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707130522158</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +299,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="update encrypt algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="update encrypt algorithm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -272,10 +309,14 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="25" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/UserService/src/main/java/com/example/springbootproject/controller/UserController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="27" />
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Base/src/main/java/com/example/sys/exception/GlobalExceptionHandler.java</url>
+          <line>14</line>
+          <properties class="com.example.sys.exception.GlobalExceptionHandler">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -34,11 +34,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>Base</module>
         <module>EurekaCenter</module>
-        <module>UserService</module>
+        <module>WebApp</module>
         <module>Gateway</module>
-        <module>Base</module>
     </modules>
 
     <dependencyManagement>

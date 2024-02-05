@@ -6,8 +6,8 @@ spring:
   cloud:
     gateway:
       routes: # 路由规则
-        - id: user-service # 路由id 唯一标识
-          uri: lb://UserService #http：代表固定的url || lb：代表负载均衡
+        - id: web-app # 路由id 唯一标识
+          uri: lb://WebApp #http：代表固定的url || lb：代表负载均衡 后面的名称是服务的名称(在Eureka中注册的名称 也就是spring.application.name)
           predicates: #断言, 路由条件 如果path=/user/**, 则路由到UserService
             - Path=/users/** # 请求的路径必须符合该规则
             #- After=2024-01-01T00:00:00+08:00[Asia/Shanghai] # 请求的时间必须在该时间之后

@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_boot_project_demo
+    username: root
+    password: admin
+  application:
+    name: WebApp
+
+server:
+  port: 10012
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka/ # URL of the Eureka Server
