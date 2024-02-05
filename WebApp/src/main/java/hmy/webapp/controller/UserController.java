@@ -1,7 +1,6 @@
 package hmy.webapp.controller;
 
 import hmy.webapp.entity.User;
-import hmy.webapp.exception.BaseException;
 import hmy.webapp.service.impl.UserServiceImpl;
 import hmy.webapp.utils.Response;
 import hmy.webapp.utils.SHA256Encrypt;
@@ -42,13 +41,12 @@ public class UserController {
 
     //http://localhost:6002/users/register?username=testUser&password=testPassword
     @PostMapping("/register/")
-    @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT,
-            readOnly = false, timeout = 99999, rollbackFor = Exception.class)
+    @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT, timeout = 99999, rollbackFor = Exception.class)
     public String register(@Param("username") String username, @Param("password") String password){
         // check if the user already exists
         if (userService.checkExist(username) != null){
-            throw new BaseException("User already exists");
-            //return new Response(false, "User already exists").toString();
+            //throw new BaseException("User already exists");
+            return new Response(false, "User already exists").toString();
         }
 
         // Encapsulate the user information then register
