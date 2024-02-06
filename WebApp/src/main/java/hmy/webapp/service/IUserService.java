@@ -1,11 +1,13 @@
 package hmy.webapp.service;
 
+import hmy.webapp.dto.UserDTO;
 import hmy.webapp.entity.User;
+import hmy.webapp.utils.Response;
 
 public interface IUserService {
-    User login(String username, String password);
+    Response login(UserDTO userDTO);
     User checkExist(String username);
-    boolean register(User user);
+    Response register(UserDTO userDTO);
     boolean updatePassword(User user);
     boolean deleteUser(int id);
 }

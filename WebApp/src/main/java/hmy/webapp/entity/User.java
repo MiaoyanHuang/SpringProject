@@ -1,7 +1,11 @@
 package hmy.webapp.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
+
+import java.util.Date;
 
 /**
  *  一些常用的字段验证的注解
@@ -24,10 +28,21 @@ import lombok.Setter;
  */
 @Setter
 @Getter
+@ToString
+@AllArgsConstructor
 public class User {
+
     private int id;
+    private String email;
     private String username;
+    private byte[] avatar;
+    private String firstName;
+    private String lastName;
     private String password;
+    private String identity;
+    private String gender;
+    private Date createTime;
+    private Date updateTime;
 
     public static final String ID = "id";
     public static final String USERNAME = "username";
@@ -47,14 +62,4 @@ public class User {
         this.password = password;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-                "\"User\": {" +
-                    "\"id\": " + "\"" + id + "\"" + "," +
-                    "\"username\": " + "\"" + username + "\"" + "," +
-                    "\"password\": " + "\"" + password + "\"" +
-                '}' +
-                '}';
-    }
 }

@@ -1,15 +1,17 @@
 package hmy.webapp.utils;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 public class Response {
 
     private boolean flag;
     private Object data;
     private String error;
-
-//    public Response(){}
 
     public Response(boolean flag) {
         this.flag = flag;
@@ -25,12 +27,4 @@ public class Response {
         this.error = errorMsg;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-                    "\"flag\": " + flag + ", " +
-                    "\"data\": " +  data + ", " +
-                    "\"error\": " + (error == null ? null : "\"" + error + "\"") +
-                "}";
-    }
 }

@@ -1,11 +1,14 @@
 package hmy.webapp.service.impl;
 
 import hmy.webapp.dao.UserDao;
+import hmy.webapp.dto.UserDTO;
 import hmy.webapp.entity.User;
+import hmy.webapp.exception.BaseException;
 import hmy.webapp.service.IUserService;
+import hmy.webapp.utils.Response;
+import hmy.webapp.utils.SHA256Encrypt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 @Service
 public class UserServiceImpl implements IUserService {
@@ -14,8 +17,17 @@ public class UserServiceImpl implements IUserService {
     private UserDao userDao;
 
     @Override
-    public User login(String username, String password) {
-        return userDao.selectUserByUsernameAndPassword(username, password);
+    public Response login(UserDTO userDTO) {
+        try {
+            User user = userDao.selectUserByUsernameAndPassword(userDTO.getUsername(), SHA256Encrypt.encrypt(userDTO.getPassword()));
+            if (user != null) {
+                return new Response(true, userDTO);
+            }
+            return new Response(false, "Login failed due to incorrect username or password");
+        } catch (Exception e) {
+            throw new BaseException(e.getMessage());
+            //return ResponseEntity.badRequest().body(new Response(false, "Login failed"));
+        }
     }
 
     @Override
@@ -24,8 +36,21 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public boolean register(User user) {
-        return userDao.insertUser(user);
+    public Response register(UserDTO userDTO) {
+//        //check if the user already exists
+//        if (userService.checkExist(userDTO.getUsername()) != null){
+//            //throw new BaseException("User already exists");
+//            return ResponseEntity.ok(new Response(false, "User already exists"));
+//        }
+        try {
+            // Encapsulate the user information then register
+            User user = new User(userDTO.getUsername(), SHA256Encrypt.encrypt(userDTO.getPassword()));
+            boolean isSuccess = userDao.insertUser(user);
+            return new Response(isSuccess);
+        } catch (Exception e) {
+            throw new BaseException(e.getMessage());
+            //return ResponseEntity.badRequest().body(new Response(false, "Register failed"));
+        }
     }
 
     @Override
