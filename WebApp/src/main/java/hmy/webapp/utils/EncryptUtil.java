@@ -8,16 +8,19 @@ import java.security.NoSuchAlgorithmException;
  * This class is used to encrypt a string using the SHA-256 algorithm.
  * @author Huang Miaoyan
  */
-public class SHA256Encrypt {
+public class EncryptUtil {
+
+    public static final String MD5 = "MD5";
+    public static final String SHA_256 = "SHA-256";
 
     /**
      * Encrypt the input string using the SHA-256 algorithm.
      * @param input The string to be encrypted
      * @return The encrypted string
      */
-    public static String encrypt(String input) {
+    public static String encrypt(String input, String encryptType) {
         try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            MessageDigest digest = MessageDigest.getInstance(encryptType);
             byte[] encodedHash = digest.digest(input.getBytes());
             return bytesToHexString(encodedHash);
         } catch (NoSuchAlgorithmException e) {

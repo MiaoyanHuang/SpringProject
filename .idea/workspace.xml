@@ -7,18 +7,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ca5104e-3d31-4323-bfdc-3793fd12679c" name="更改" comment="1. Enhance code logic for login and register &#10;2. Optimize project structure&#10;3. Rebuild user table and update sql for create table&#10;4. Add UserDTO for transfer data between controller level(also include return the data to front-end) and service level">
-      <change afterPath="$PROJECT_DIR$/WebApp/SQLScript/Create_UserTable.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/dto/UserDTO.java" afterDir="false" />
+    <list default="true" id="0ca5104e-3d31-4323-bfdc-3793fd12679c" name="更改" comment="Update MyBatis">
+      <change afterPath="$PROJECT_DIR$/.idea/NCHomeConfigSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/config/MessageSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/utils/MyBatisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/i18n/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/i18n/messages_en.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/i18n/messages_zh.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/mapper/UserDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/SQLScript/Create_UserTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/SQLScript/Create_UserTable.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/WebApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/WebApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/invocation/DynamicInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/invocation/DynamicInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/utils/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/utils/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/UserServiceTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/UserServiceTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/WebApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/WebApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/utils/SHA256Encrypt.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/utils/EncryptUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/UserDaoTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/test/java/hmy/webapp/UserDaoTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +45,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="XML Properties File" />
         <option value="Class" />
       </list>
     </option>
@@ -39,7 +57,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -53,8 +71,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.UserDaoTestCase.selectUserById (1).executor": "Run",
     "JUnit.UserDaoTestCase.selectUserById.executor": "Run",
+    "JUnit.UserDaoTestCase.testUser.executor": "Run",
     "Maven.UserService [install].executor": "Run",
+    "Maven.WebApp [clean].executor": "Run",
+    "Maven.WebApp [compile].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -68,13 +90,13 @@
     "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.UserServiceApplication (1).executor": "Run",
     "Spring Boot.UserServiceApplication.executor": "Debug",
-    "Spring Boot.WebApplication.executor": "Debug",
+    "Spring Boot.WebApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "18",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/IDEAProjects/SpringProject/UserService/src/main/java/com/example/springbootproject",
+    "last_opened_file_path": "E:/IDEAProjects/SpringProject/WebApp/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -85,7 +107,7 @@
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "SQL Dialects",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "9de55c031c39f5693a3777edd744d95e",
     "vue.rearranger.settings.migration": "true"
   }
@@ -95,15 +117,17 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEAProjects\SpringProject\WebApp\src\main\resources" />
       <recent name="E:\IDEAProjects\SpringProject\UserService\src\main\java\com\example\springbootproject" />
       <recent name="E:\IDEAProject\SpringProject\UserService" />
       <recent name="E:\IDEAProject\SpringProject\EurekaCenter\target" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEAProjects\SpringProject\WebApp\src\main\resources\mapper" />
+      <recent name="E:\IDEAProjects\SpringProject\WebApp\src\main\java\hmy\webapp\dao" />
+      <recent name="E:\IDEAProjects\SpringProject\WebApp\src\main\resources\i18n" />
+      <recent name="E:\IDEAProjects\SpringProject\WebApp\src\main\resources" />
       <recent name="E:\IDEAProjects\SpringProject\WebApp" />
-      <recent name="E:\IDEAProjects\SpringProject\Gateway" />
-      <recent name="E:\IDEAProjects\SpringProject\Base" />
-      <recent name="E:\IDEAProjects\SpringProject\Base\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example" />
@@ -119,7 +143,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebApplication">
+  <component name="RunManager" selected="JUnit.UserDaoTestCase.selectUserById (1)">
+    <configuration name="UserDaoTestCase.selectUserById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hmy.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hmy.webapp" />
+      <option name="MAIN_CLASS_NAME" value="hmy.webapp.UserDaoTestCase" />
+      <option name="METHOD_NAME" value="selectUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserDaoTestCase.selectUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WebApp" />
       <extension name="coverage">
@@ -131,6 +171,22 @@
       <option name="PACKAGE_NAME" value="com.example.springbootproject" />
       <option name="MAIN_CLASS_NAME" value="com.example.springbootproject.UserDaoTestCase" />
       <option name="METHOD_NAME" value="selectUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDaoTestCase.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hmy.webapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="hmy.webapp" />
+      <option name="MAIN_CLASS_NAME" value="hmy.webapp.UserDaoTestCase" />
+      <option name="METHOD_NAME" value="testUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -170,6 +226,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserDaoTestCase.selectUserById (1)" />
+      <item itemvalue="JUnit.UserDaoTestCase.testUser" />
       <item itemvalue="JUnit.UserDaoTestCase.selectUserById" />
       <item itemvalue="Spring Boot.EurekaCenterApplication" />
       <item itemvalue="Spring Boot.WebApplication" />
@@ -177,6 +235,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserDaoTestCase.selectUserById (1)" />
+        <item itemvalue="JUnit.UserDaoTestCase.testUser" />
         <item itemvalue="Spring Boot.WebApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="JUnit.UserDaoTestCase.selectUserById" />
@@ -186,7 +246,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-18.0.2-corretto-18.0.2-3183f394aec4-38982a12" />
+        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
       </set>
     </attachedChunks>
   </component>
@@ -260,7 +320,37 @@
       <workItem from="1707148469629" duration="6700000" />
       <workItem from="1707155235282" duration="55000" />
       <workItem from="1707205649802" duration="10561000" />
-      <workItem from="1707229858591" duration="10760000" />
+      <workItem from="1707229858591" duration="10919000" />
+      <workItem from="1707290874448" duration="1459000" />
+      <workItem from="1707299810322" duration="313000" />
+      <workItem from="1707378900570" duration="2653000" />
+      <workItem from="1707394182959" duration="599000" />
+      <workItem from="1707398511559" duration="1219000" />
+      <workItem from="1707468366854" duration="2503000" />
+      <workItem from="1707494404557" duration="36000" />
+      <workItem from="1707559876616" duration="1398000" />
+      <workItem from="1707562556743" duration="1618000" />
+      <workItem from="1707578665302" duration="594000" />
+      <workItem from="1707592954521" duration="672000" />
+      <workItem from="1707593686498" duration="708000" />
+      <workItem from="1707638409019" duration="6884000" />
+      <workItem from="1707647887895" duration="4066000" />
+      <workItem from="1707652283450" duration="1048000" />
+      <workItem from="1707735836820" duration="7707000" />
+      <workItem from="1708011811307" duration="592000" />
+      <workItem from="1708015462838" duration="1386000" />
+      <workItem from="1708018294874" duration="482000" />
+      <workItem from="1708064742765" duration="2640000" />
+      <workItem from="1708089085196" duration="2659000" />
+      <workItem from="1708167275290" duration="1195000" />
+      <workItem from="1708283386811" duration="1169000" />
+      <workItem from="1708356775567" duration="1679000" />
+      <workItem from="1708535391853" duration="4637000" />
+      <workItem from="1708540066028" duration="267000" />
+      <workItem from="1708584682212" duration="772000" />
+      <workItem from="1708781094139" duration="2596000" />
+      <workItem from="1708790923185" duration="9722000" />
+      <workItem from="1708838337781" duration="3415000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -294,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707155032184</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. Enhance code logic for login and register &#10;2. Optimize project structure&#10;3. Rebuild user table and update sql for create table&#10;4. Add UserDTO for transfer data between controller level(also include return the data to front-end) and service level">
+      <option name="closed" value="true" />
+      <created>1707242224520</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707242224520</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +415,8 @@
     <MESSAGE value="reformat project structure" />
     <MESSAGE value="fix error" />
     <MESSAGE value="1. Enhance code logic for login and register &#10;2. Optimize project structure&#10;3. Rebuild user table and update sql for create table&#10;4. Add UserDTO for transfer data between controller level(also include return the data to front-end) and service level" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Enhance code logic for login and register &#10;2. Optimize project structure&#10;3. Rebuild user table and update sql for create table&#10;4. Add UserDTO for transfer data between controller level(also include return the data to front-end) and service level" />
+    <MESSAGE value="Update MyBatis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update MyBatis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -337,21 +436,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/exception/GlobalExceptionHandler.java</url>
-          <line>29</line>
-          <properties class="hmy.webapp.exception.GlobalExceptionHandler" method="handleException">
+          <line>41</line>
+          <properties class="hmy.webapp.exception.GlobalExceptionHandler" method="handleMethodArgumentNotValidException">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="38" />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/controller/UserController.java</url>
-          <line>31</line>
-          <properties class="hmy.webapp.controller.UserController" method="login">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="53" />
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WebApp/src/main/java/hmy/webapp/service/impl/UserServiceImpl.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

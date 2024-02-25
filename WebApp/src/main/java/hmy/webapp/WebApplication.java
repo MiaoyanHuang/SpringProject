@@ -6,6 +6,7 @@ import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+//@SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 @SpringBootApplication
 public class WebApplication {
 
@@ -19,6 +20,13 @@ public class WebApplication {
         //RestTemplate是Spring提供的用于访问Rest服务的客户端，RestTemplate提供了多种便捷访问远程Http服务的方法
         return new RestTemplate();
     }
+
+    /*
+    // 这个注解是用来设置一个定时任务，这个任务会每隔5秒执行一次 需要在启动类上配合@EnableScheduling注解使用
+    @Scheduled(fixedRate = 5000)
+    public void scheduledTest() {
+        System.out.println("This is a scheduled task.");
+    }*/
 
     /*
     假设这里有一个服务A，它需要调用另一个服务B，那么服务A就是服务B的客户端，服务B就是服务A的服务端。

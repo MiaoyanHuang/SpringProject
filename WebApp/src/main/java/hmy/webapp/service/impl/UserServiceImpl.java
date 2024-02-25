@@ -6,9 +6,12 @@ import hmy.webapp.entity.User;
 import hmy.webapp.exception.BaseException;
 import hmy.webapp.service.IUserService;
 import hmy.webapp.utils.Response;
-import hmy.webapp.utils.SHA256Encrypt;
+import hmy.webapp.utils.EncryptUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserServiceImpl implements IUserService {
@@ -19,7 +22,8 @@ public class UserServiceImpl implements IUserService {
     @Override
     public Response login(UserDTO userDTO) {
         try {
-            User user = userDao.selectUserByUsernameAndPassword(userDTO.getUsername(), SHA256Encrypt.encrypt(userDTO.getPassword()));
+            User user = userDao.selectUserByUsernameAndPassword(
+                    userDTO.getUsername(), EncryptUtil.encrypt(userDTO.getPassword(), EncryptUtil.SHA_256));
             if (user != null) {
                 return new Response(true, userDTO);
             }
@@ -36,15 +40,16 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT, timeout = 60, rollbackFor = Exception.class)
     public Response register(UserDTO userDTO) {
-//        //check if the user already exists
-//        if (userService.checkExist(userDTO.getUsername()) != null){
-//            //throw new BaseException("User already exists");
-//            return ResponseEntity.ok(new Response(false, "User already exists"));
-//        }
+        //check if the user already exists
+        if (checkExist(userDTO.getUsername()) != null){
+            throw new BaseException("User already exists");
+            //return ResponseEntity.ok(new Response(false, "User already exists"));
+        }
         try {
             // Encapsulate the user information then register
-            User user = new User(userDTO.getUsername(), SHA256Encrypt.encrypt(userDTO.getPassword()));
+            User user = new User(userDTO.getUsername(), EncryptUtil.encrypt(userDTO.getPassword(), EncryptUtil.SHA_256));
             boolean isSuccess = userDao.insertUser(user);
             return new Response(isSuccess);
         } catch (Exception e) {
@@ -55,11 +60,19 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public boolean updatePassword(User user) {
-        return userDao.updateUser(user);
+        try {
+            return userDao.updateUser(user);
+        } catch (Exception e) {
+            throw new BaseException(e.getMessage());
+        }
     }
 
     @Override
     public boolean deleteUser(int id) {
-        return userDao.deleteUserById(id);
+        try {
+            return userDao.deleteUserById(id);
+        } catch (Exception e) {
+            throw new BaseException(e.getMessage());
+        }
     }
 }

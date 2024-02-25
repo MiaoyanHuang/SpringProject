@@ -14,3 +14,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:10010/eureka/ # URL of the Eureka Server
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: hmy.webapp.entity, hmy.webapp.dto
+
+
